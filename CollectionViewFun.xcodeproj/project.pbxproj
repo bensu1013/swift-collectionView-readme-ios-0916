@@ -13,6 +13,7 @@
 		1BFE40591DA827A4004C71A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFE40581DA827A4004C71A7 /* Assets.xcassets */; };
 		1BFE405C1DA827A4004C71A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFE405A1DA827A4004C71A7 /* LaunchScreen.storyboard */; };
 		1BFE40641DA828D5004C71A7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFE40631DA828D5004C71A7 /* ColorExtension.swift */; };
+		B556EB611DA869CD0054F777 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B556EB601DA869CD0054F777 /* BasicCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BFE405B1DA827A4004C71A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFE405D1DA827A4004C71A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFE40631DA828D5004C71A7 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B556EB601DA869CD0054F777 /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1BFE40511DA827A4004C71A7 /* AppDelegate.swift */,
 				1BFE40531DA827A4004C71A7 /* ViewController.swift */,
 				1BFE40631DA828D5004C71A7 /* ColorExtension.swift */,
+				B556EB601DA869CD0054F777 /* BasicCollectionViewCell.swift */,
 				1BFE40551DA827A4004C71A7 /* Main.storyboard */,
 				1BFE40581DA827A4004C71A7 /* Assets.xcassets */,
 				1BFE405A1DA827A4004C71A7 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFE40641DA828D5004C71A7 /* ColorExtension.swift in Sources */,
+				B556EB611DA869CD0054F777 /* BasicCollectionViewCell.swift in Sources */,
 				1BFE40541DA827A4004C71A7 /* ViewController.swift in Sources */,
 				1BFE40521DA827A4004C71A7 /* AppDelegate.swift in Sources */,
 			);
@@ -301,6 +305,7 @@
 				1BFE40621DA827A4004C71A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

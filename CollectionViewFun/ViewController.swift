@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    var items: [String] = []
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -17,7 +19,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
+        items = [
+            "Hello", "My", "Baby", "Hello", "My", "Honey", "Hello", "My", "Ragtime", "Gal"
+        ]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,12 +33,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Collection View DataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath) as! BasicCollectionViewCell
         
+        cell.mainLabel.text = items[indexPath.row]
         cell.backgroundColor = UIColor.getRandomColor()
         return cell
     }
